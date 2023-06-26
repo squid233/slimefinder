@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "slimefinder",
   "version": "${version}",
-  "name": "Slime Finder",
+  "name": "Slime Chunk Finder",
   "description": "Slime chunk finder",
   "authors": [
     "squid233"
@@ -14,10 +14,13 @@
   },
   "license": "MIT",
   "icon": "assets/slimefinder/icon.png",
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
     "client": [
-      "io.squid233.slimefinder.SlimeFinderClient"
+      "io.github.squid233.slimefinder.SlimeFinderClient"
+    ],
+    "server": [
+      "io.github.squid233.slimefinder.SlimeFinderServer"
     ]
   },
   "mixins": [

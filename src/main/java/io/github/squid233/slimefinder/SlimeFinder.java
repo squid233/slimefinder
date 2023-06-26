@@ -14,16 +14,14 @@
  * copies or substantial portions of the Software.
  */
 
-package io.squid233.slimefinder;
+package io.github.squid233.slimefinder;
 
-import net.fabricmc.api.ClientModInitializer;
+import net.minecraft.util.Identifier;
 
 /**
  * @author squid233
  * @since 0.1.0
  */
-public final class SlimeFinderClient implements ClientModInitializer {
-    @Override
-    public void onInitializeClient() {
-    }
+public final class SlimeFinder {
+    public static final Identifier SEED_PACKET_ID = new Identifier("slimefinder", "seed_packet");
 }
