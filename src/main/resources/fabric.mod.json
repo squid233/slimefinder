@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "slimefinder",
+  "version": "${version}",
+  "name": "Slime Finder",
+  "description": "Slime chunk finder",
+  "authors": [
+    "squid233"
+  ],
+  "contact": {
+    "homepage": "https://github.com/squid233/slimefinder",
+    "sources": "https://github.com/squid233/slimefinder",
+    "issues": "https://github.com/squid233/slimefinder/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/slimefinder/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.squid233.slimefinder.SlimeFinderClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "slimefinder.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
